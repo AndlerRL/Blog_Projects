@@ -11,10 +11,14 @@ $(function () {
   if ($('[data-toggle="tooltip"]').length)
     $('[data-toggle="tooltip"]').tooltip();
 
-  const fav = $('#fav');
-  const voteUp = $('#vote-up');
-  const voteDown = $('#vote-down');
-  const share = $('#share');
+  const fav = $('i[id="fav"]');
+  const voteUp = $('i[id="vote-up"]');
+  const voteDown = $('i[id="vote-down"]');
+  const share = $('i[id="share"');
+
+  const voteUpReact = $('i[id="vote-up-react"]');
+  const voteDownReact = $('i[id="vote-down-react"]');
+  const replyReact = $('i[id="reply-react"');
 
   let count = 0;
 
@@ -72,5 +76,38 @@ $(function () {
       share.addClass('selected');
     else
       share.removeClass('selected');
+  });
+
+  voteUpReact.click(e => {
+    e.preventDefault();
+
+    if (voteUpReact.hasClass('selected') == false && voteDownReact.hasClass('selected') == false)
+      voteUpReact.addClass('selected');
+    else if (voteDownReact.hasClass('selected') == true) {
+      voteDownReact.removeClass('selected');
+      voteUpReact.addClass('selected');
+    } else
+      voteUpReact.removeClass('selected')
+  });
+
+  voteDownReact.click(e => {
+    e.preventDefault();
+
+    if (voteDownReact.hasClass('selected') == false && voteUpReact.hasClass('selected') == false)
+      voteDownReact.addClass('selected');
+    else if (voteUpReact.hasClass('selected') == true) {
+      voteUpReact.removeClass('selected');
+      voteDownReact.addClass('selected');
+    } else
+      voteDownReact.removeClass('selected');
+  });
+
+  replyReact.click(e => {
+    e.preventDefault();
+
+    if (replyReact.hasClass('selected') == false)
+      replyReact.addClass('selected');
+    else
+      return;
   });
 });
