@@ -4,15 +4,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cuisine Fraîche</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+  <link rel="shortcut icon" href="assets/img/bread.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/foundation.min.css">
   <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
+  <div class="grid-container background">
+    <header class="grid-x text-justify header collapse small-order-1">
+      <div class="cell large-5 medium-6 small-18 header-content">
+        <h2 class="text-center">CUISINE FRAÎCHE</h2>
+        <h4 class="text-right">Cooking with Style. . .</h4>
+        <ul class="half-nav breadcrumbs text-justify hide-for-landscape hide-for-portrait">
+          <li class="is-active">Home</li>
+          <li></li>
+        </ul>
+      </div>
+      <img class="cell large-13 medium-12 small-18 header-img" style="background-image: url('assets/img/wide_bread.png')">
+    </header>
+
+    <aside class="grid-x small-order-5">
+      <div class="cell large-5 medium-6 small-18 main-nav-container">
+        <div class="nav-search">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="Search" id="search" name="search">
+          <button hidden type="submit" name="search"></button>
+        </div>
+
+        <div class="cell large-5 medium-6 small-18 nav-content">
+          <ul class="vertical menu">
+            <li class="is-active">
+              <a href="#!">Home</a>
+            </li>
+            <li>
+              <a href="#!">My Recipes</a>
+            </li>
+            <li>
+              <a href="#!">My Favorite Recipes</a>
+            </li>
+            <li>
+              <a href="#!">Explore Posts</a>
+            </li>
+          </ul>
+        </div>
 
 
+      </div>
+    </aside>
+  </div>
+
+
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
