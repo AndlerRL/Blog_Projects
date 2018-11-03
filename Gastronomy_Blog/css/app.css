@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
 @font-face {
   font-family: 'Bondoni-Italic';
   src: url(../assets/fonts/BodoniFLF-Italic.ttf),
-       url(../assets/fonts/BodoniFLF-Italic.woff);
+    url(../assets/fonts/BodoniFLF-Italic.woff);
 }
 
 * {
@@ -23,6 +25,7 @@ body {
   background: url(../assets/img/kitchen_background.png) no-repeat fixed;
   background-position: top;
   background-size: cover;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 div.background {
@@ -39,31 +42,31 @@ header.header {
   border-bottom: 2px solid #1b5e20c0;
 }
 
-header.header > div.header-content {
+header.header>div.header-content {
   background-color: #00c853;
   padding: 1rem;
   border-right: 2px solid #1b5e20c0;
 }
 
-header.header > div.header-content > h2 {
+header.header>div.header-content>h2 {
   font-family: 'Bungee Shade', Arial, sans-serif;
   letter-spacing: 10px;
   font-size: 2.15rem;
 }
 
-header.header > div.header-content > h4 {
+header.header>div.header-content>h4 {
   font-family: 'Bondoni-Italic', Arial, sans-serif;
   font-size: 1.6rem;
   padding-bottom: 0;
 }
 
-header.header > div.header-content > ul.half-nav {
+header.header>div.header-content>ul.half-nav {
   display: flex;
   bottom: 0;
   margin-bottom: 0 !important;
 }
 
-header.header > img.header-img {
+header.header>img.header-img {
   background-size: cover;
   background-image: fixed;
 }
@@ -75,9 +78,10 @@ aside.main-nav-container {
   padding: 0;
   min-height: 50rem;
   filter: drop-shadow(-6px 6px 5px rgba(47, 79, 79, 0.4));
+  order: 2;
 }
 
-aside.main-nav-container > div.nav-search {
+aside.main-nav-container>div.nav-search {
   display: inline-flex;
   background-color: #00e5ff;
   flex-direction: row;
@@ -85,59 +89,62 @@ aside.main-nav-container > div.nav-search {
   padding: .7rem 1rem 0;
 }
 
-aside.main-nav-container > div.nav-search > i {
+aside.main-nav-container>div.nav-search>i {
   color: #424242;
   font-size: 24px;
   padding-top: .5rem;
   padding-right: 1rem;
 }
 
-aside.main-nav-container > div.nav-content {
+aside.main-nav-container>div.nav-content {
   width: 100%;
   padding: 1.15rem;
   margin-top: 1rem;
 }
 
-aside.main-nav-container > div.nav-content > ul > li:not(.is-active) > a {
+aside.main-nav-container>div.nav-content>ul>li:not(.is-active)>a {
   color: #212121 !important;
 }
 
-aside.main-nav-container > div.nav-content > ul > li:not(.is-active) > a:hover {
+aside.main-nav-container>div.nav-content>ul>li:not(.is-active)>a:hover,
+aside.main-nav-container>div.fav-img-container>div>div>div.fav-img>a:hover {
   background-color: #18ffff;
 }
 
-aside.main-nav-container > div.fav-img-container > div {
+aside.main-nav-container>div.fav-img-container>div {
   background-color: #00e676;
   border-color: #1b5e20c0;
   border-radius: 2px;
 }
 
-aside.main-nav-container > div.fav-img-container > div:hover,
-aside.main-nav-container > div.history-container > div:hover {
+aside.main-nav-container>div.fav-img-container>div:hover,
+aside.main-nav-container>div.history-container>div:hover {
   box-shadow: 0 3px 6px 2px rgba(47, 79, 79, 0.3);
   transform: scale(1.05, 1.05);
 }
 
-aside.main-nav-container > div.fav-img-container > div > div {
+aside.main-nav-container>div.fav-img-container>div>div {
   padding: 0;
 }
 
-aside.main-nav-container > div.fav-img-container > div > div > div.fav-img {
+aside.main-nav-container>div.fav-img-container>div>div>div.fav-img {
   width: 100% !important;
   min-height: 8rem;
   margin: 0 auto !important;
 }
 
-aside.main-nav-container > div.fav-img-container > div > div > div.fav-img > a {
+aside.main-nav-container>div.fav-img-container>div>div>div.fav-img>a {
   position: relative;
   border-radius: 50%;
-  border: 1px solid #1b5e20c0;
+  border: 1px solid #1b5e2030;
   float: right;
+  right: .25rem;
   margin-top: 100% !important;
   margin-bottom: 0;
+  filter: drop-shadow(0 0 3px gray)
 }
 
-aside.main-nav-container > div.history-container {
+aside.main-nav-container>div.history-container {
   height: 25rem;
   overflow: auto;
   padding: 0;
@@ -147,59 +154,328 @@ aside.main-nav-container > div.history-container {
   padding-top: 1rem;
 }
 
-aside.main-nav-container > div.history-container > div {
+aside.main-nav-container>div.history-container>div {
   margin-bottom: .25rem;
 }
 
-aside.main-nav-container > div.history-container > div > a {
+aside.main-nav-container>div.history-container>div>a {
   color: #212121df;
 }
 
-aside.main-nav-container > div.history-container > div > a:hover {
+aside.main-nav-container>div.history-container>div>a:hover {
   color: #00e5ff;
 }
 
 main.main-content-container {
   min-height: 50rem;
   filter: drop-shadow(-6px 6px 5px rgba(47, 79, 79, 0.4));
+  order: 3;
 }
 
-main.main-content-container > div.main-content {
+main.main-content-container>div.main-content {
   background-color: #fff9c4;
   margin: 1rem 1rem 2.5rem;
   padding: 1rem;
   border-radius: 3px;
 }
 
-main.main-content-container > div.main-content > div.sub-content {
-  border-top: 1px solid;
+main.main-content-container>div.main-content>h2 {
+  margin-bottom: 1.5rem;
+}
+
+main.main-content-container>div.main-content>div.content-container {
+  display: inline-flex;
+  width: 100%;
+}
+
+main.main-content-container>div.main-content>div.content-container-full {
+  display: block;
+  width: 100%;
+}
+
+main.main-content-container>div.main-content>div.content-container>div.recipe-img-container {
+  width: 50%;
+}
+
+main.main-content-container>div.main-content>div.content-container>div.recipe-img-container-full {
+  width: 100%;
+}
+
+main.main-content-container>div.main-content>div.content-container>div.recipe-img-container>img.recipe-img {
+  border: 2px solid transparent;
+  background-size: contain;
+  width: 100%;
+}
+
+main.main-content-container>div.main-content>div.content-container>div.content-description {
+  padding: 1.5rem;
+  margin: 0 auto;
+  width: 50%;
+}
+
+main.main-content-container>div.main-content>div.content-container>div.content-description-full {
+  padding: 1.5rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+main.main-content-container>div.main-content>div.sub-content {
+  border-top: 1px solid #2121215f;
   padding: 1rem;
 }
 
-main.main-content-container > div.main-content > div.sub-content > div.share-content {
-  border: 1px solid;
+main.main-content-container>div.main-content>div.sub-content>h6 {
+  opacity: .7;
+}
+
+ul {
+  list-style-type: circle
+}
+
+main.main-content-container>div.main-content>div.sub-content>ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  list-style-position: outside;
+}
+
+main.main-content-container>div.main-content>div.sub-content>ol>li {
+  counter-increment: my-awesome-counter;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+main.main-content-container>div.main-content>div.sub-content>ol>li::before {
+  content: "0"counter(my-awesome-counter);
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+  font-family: 'Abril Fatface', serif;
+  line-height: 1;
+}
+
+main.main-content-container>div.main-content>div.sub-content>div.recipe-notes {
+  background-color: rgb(100, 100, 100);
+  padding: .5rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 3px;
+  color: #fafafa;
+  border: 1px solid #2121211f;
+}
+
+main.main-content-container>div.main-content>div.sub-content>div.recipe-notes>h5 {
+  margin-bottom: 1rem;
+  padding: 0 0 .25rem .5rem;
+  border-bottom: 1px solid #ffff8d;
+}
+
+.note-clip {
+  margin-top: -12px;
+  padding: 2rem;
+  color: #212121;
+  background-color: #ffff8dd0;
+  -webkit-clip-path: polygon(25px 0, 100% 0, 98% 100%, 0 100%, 0 25px);
+  clip-path: polygon(25px 0, 100% 0, 98% 100%, 0 100%, 0 25px);
+}
+
+main.main-content-container>div.main-content>div.sub-content>div.recipe-notes>div.note-clip>p,
+main.main-content-container>div.main-content>div.sub-content>div.recipe-notes>div.note-clip>ul li {
+  font-size: 12px !important;
+}
+
+main.main-content-container>div.main-content>div.sub-content>div.share-content {
+  border: 1px solid #fafafa;
   padding: 1rem;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #e0f7faaf;
+}
+
+main.main-content-container>div.main-content>div.sub-content>div.share-content>span.share-comment {
+  border-bottom: 1px solid #fafafa;
+  height: 3.5rem;
   margin: 0 auto;
 }
 
-main.main-content-container > div.main-content > div.sub-content > div.share-content > div.comment-section {
-  border: 1px solid;
+main.main-content-container>div.main-content>div.sub-content>div.share-content>span.share-comment>label {
+  padding: 1rem;
+  background-color: #cacaca;
+  height: 3.5rem;
+}
+
+.user-icon {
+  font-size: 38px;
+  position: relative;
+}
+
+main.main-content-container>div.main-content>div.sub-content>div.share-content>span.share-comment>label>i.user-icon {
+  margin-top: -.5rem;
+}
+
+main.main-content-container>div.main-content>div.sub-content>div.share-content>span.share-comment>textarea {
+  height: 3.5rem;
+  overflow: auto;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+div.share-btn i {
+  font-size: 18px;
+  color: #1b5e205f;
+  padding: 0 .5rem;
+}
+
+main.main-content-container>div.main-content>div.sub-content>div.share-content>div.share-btn>a:not(:last-of-type)>i {
+  font-size: 20px;
+  color: #1b5e205f;
+  padding: 0 .5rem;
+}
+
+main.main-content-container>div.main-content>div.sub-content>div.share-content>div.share-btn>a:not(:last-of-type)>i:hover,
+div.share-btn i:hover {
+  color: #1b5e20;
+}
+
+main.main-content-container>div.main-content>div.sub-content>div.share-content>div.share-btn>a:last-of-type {
+  width: 5rem;
+  margin-top: .5rem;
+}
+
+main.main-content-container>div.main-content>div.sub-content>div.share-content>div.share-btn>a:last-of-type>i {
+  color: whitesmoke !important;
+}
+
+main.main-content-container>div.main-content>div.sub-content>div.share-content>div.comment-section-container {
+  border-top: 1px solid #2121215f;
   padding: 1rem;
   margin: 0 auto;
+  height: 25rem;
+  overflow: auto;
 }
+
+.post-date {
+  opacity: .5;
+  font-size: 11px;
+}
+
+main.main-content-container>div.main-content>div.sub-content>div.share-content>div.comment-section-container>div.comment {
+  margin: 1.5rem auto 0;
+  background-color: #e0f7fa;
+  border: 1px solid #1b5e205f;
+  border-radius: 3px;
+  padding: 1rem;
+  box-shadow: -3px 3px 6px #2121211f;
+  position: relative;
+}
+
+main.main-content-container>div.main-content>div.sub-content>div.share-content>div.comment-section-container>div.comment-reply {
+  margin: .25rem 0 .25rem auto;
+  width: 66.6666%;
+  background-color: #e1f5fe;
+  border: 1px solid #1b5e205f;
+  border-radius: 3px;
+  padding: 1rem;
+  box-shadow: -3px 3px 6px #2121211f;
+  position: relative;
+}
+
+main.main-content-container>div.main-content>div.sub-content>div.share-content>div.comment-section-container>div.comment-reply>label>span.post-date>p {
+  opacity: .5;
+}
+
+footer.footer-container {
+  margin-top: 4rem;
+  padding: 1.5rem 1.5rem .5rem;
+  background-color: #00e676;
+}
+
+footer.footer-container > div.footer-main {
+  font-size: 12px;
+}
+
+footer.footer-container > div.footer-main > h6 {
+  opacity: .3333;
+  font-family: monospace;
+  font-size: .75rem;
+}
+
+footer.footer-container > div.footer-main > div.footer-contact > ul {
+  margin-top: .5rem;
+}
+
+footer.footer-container > div.footer-main > div.footer-contact > ul > li > a,
+footer.footer-container > div.footer-main > div.footer-contact > ul.websites > li > a {
+  outline-style: none;
+  color: #424242;
+}
+
+footer.footer-container > div.footer-main > div.footer-contact > ul > li > i {
+  font-size: 16px;
+  margin: .25rem auto;
+}
+
+footer.footer-container > div.footer-main > div.footer-contact > ul.websites {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  align-content: flex-end;
+  justify-content: space-between;
+  width: 33%;
+  
+}
+
+footer.footer-container > div.footer-main > div.footer-contact > ul.websites > li > i {
+  margin: 0 .5rem;
+  padding: 0 .5rem;
+}
+
+footer.footer-container > div.footer-main > div.footer-contact > ul.websites > li:hover {
+  transform: scale(1.09, 1.09);
+}
+
+footer.footer-container > div.footer-main > div.footer-contact > ul > li > a:hover,
+footer.footer-container > div.footer-main > div.footer-contact > ul.websites > li > a:hover {
+  color: #212121;
+}
+
 
 @media (max-width: 770px) {
   .hide-for-small {
     display: none;
   }
+
+  div.background {
+    padding: 0;
+    margin-left: -2rem;
+  }
+
+  aside.main-nav-container {
+    margin-left: 1rem;
+    order: 5;
+  }
+
+  main.main-content-container>div.main-content>div.content-container {
+    display: block;
+  }
+
+  main.main-content-container>div.main-content>div.content-container>div.recipe-img-container {
+    width: 100%;
+  }
+
+  main.main-content-container>div.main-content>div.content-container>div.content-description {
+    width: 100%;
+  }
+
+  main.main-content-container>div.main-content>div.sub-content>div.share-content>div.comment-section-container>div.comment>div.comment-reply {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1400px) {
-  header.header > div.header-content > h2 {
+  header.header>div.header-content>h2 {
     font-size: 2em;
   }
 
-  header.header > div.header-content > h4 {
+  header.header>div.header-content>h4 {
     font-size: 1.5em;
   }
 }

@@ -12,13 +12,14 @@
   <link rel="shortcut icon" href="assets/img/bread-icon.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/foundation.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
   <div class="grid-container">
     <header class="grid-x text-justify header collapse small-order-1">
-      <div class="cell large-5 medium-6 small-18 header-content">
+      <div class="cell large-5 medium-6 header-content">
         <h2 class="text-center">CUISINE FRAÎCHE</h2>
         <h4 class="text-right">Cooking with Style...</h4>
         <ul class="half-nav breadcrumbs text-justify hide-for-landscape hide-for-portrait">
@@ -26,13 +27,13 @@
           <li></li>
         </ul>
       </div>
-      <img class="cell large-13 medium-12 small-18 header-img" style="background-image: url('assets/img/wide_bread.png')">
+      <img class="cell large-13 medium-12 header-img" style="background-image: url('assets/img/wide_bread.png')">
     </header>
 
     <div class="background">
       <div class="grid-container">
         <div class="grid-x">
-          <aside class="cell large-5 medium-6 small-18 main-nav-container">
+          <aside class="cell large-5 medium-6 main-nav-container small-order-3">
             <div class="cell full nav-search">
               <i class="fa fa-search"></i>
               <input type="text" placeholder="Search" id="search" name="search">
@@ -56,6 +57,7 @@
               </ul>
             </div>
 
+            <h5 align="center">Favorite Recipes</h5>
             <div class="grid-x hide-for-small fav-img-container">
               <div class="card cell medium-6 large-6">
                 <div class="card-section">
@@ -180,118 +182,532 @@
           </aside>
 
 
-          <main class="cell large-13 medium-12 small-18 main-content-container">
-            <div class="cell main-content">
-              <h1>MAIN</h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quo temporibus sunt aperiam illo eveniet,
-              repellat
-              distinctio! Aliquam vitae repellendus porro, temporibus quaerat incidunt maiores possimus mollitia nisi,
-              accusantium impedit.
+          <!-- HERE START THY POST SECTION -->
+
+          <main class="cell large-13 medium-12 main-content-container small-order-2">
+            <div class="cell large-13 medium-12 main-content" data-aos="fade-up-left" data-aos-placement="top">
+              <h2 align="center">Easy Chili Lime Fish Tacos</h2>
+              <div class="cell content-container small-order-1">
+                <div class="cell large-9 medium-9 recipe-img-container align-left small-order-1">
+                  <img src="assets/img/fav-img-modal/fav_6-modal.jpg" alt="Recipe_1" class="recipe-img small-order-1"
+                    style="margin-right: 1rem;">
+                </div>
+                <div class="content-description align-right small-order-2">
+                  <p>
+                    Of all the tacos out there, why are fish tacos just so much better? It’s like they were just meant
+                    to
+                    be, with the light and flaky fish baked in chili and lime and butter, plus a solidly delicious
+                    charred
+                    corn tortilla plus a good fresh (peach?) salsa and maybe a sauce such as spicy mayo because what is
+                    this blog if not an ongoing love letter to sauce.
+                    <br>
+                    <br>
+                    Chili Lime Fish Tacos – these are so easy, it will blow your mind. 5 basic ingredients for the
+                    fish,
+                    and a quick peach salsa to add some color and flavor.
+                  </p>
+                </div>
+              </div>
+              <div class="cell large-9 medium-9 content-container small-order-2">
+                <div class="content-description float-left small-order-1">
+                  <p>
+                    <h6 align="left"><strong>INGREDIENTS</strong></h6>
+                    <h6>for the chili lime fish:</h6>
+                    <ul>
+                      <li>3 tablespoons butter, melted</li>
+                      <li>juice of one lime</li>
+                      <li>1 teaspoon chili powder</li>
+                      <li>1/2 teaspoon garlic powder</li>
+                      <li>1/2 teaspoon sea salt</li>
+                      <li>12 ounces of your preffered fish (frozzed)</li>
+                    </ul>
+                    <h6>for the peach salsa:</h6>
+                    <ul>
+                      <li>1 peach, chopped</li>
+                      <li>1/4 cup cilantro leaves, roughly chopped</li>
+                      <li>1/4 cup red onion, minced</li>
+                      <li>half a jalapeño, seeded and minced</li>
+                      <li>lime juice and salt to taste</li>
+                    </ul>
+                    <h6>other taco essentials:</h6>
+                    <ul>
+                      <li>corn tortillas</li>
+                      <li>mayo for a quick sauce<i class="fa fa-asterisk" style="font-size: 8px; position: absolute; top: relative; opacity: .66; padding-top: .2rem"></i></li>
+                      <li>avocado, lime, or other toppings</li>
+                    </ul>
+                  </p>
+                </div>
+                <div class="recipe-img-container float-right small-order-2" style="padding-top: 5rem;">
+                  <img src="assets/img/fav-img-modal/fav_6-modal-2jpg.jpg" alt="Recipe_1-2" class="recipe-img">
+                </div>
+              </div>
+
               <div class="cell sub-content">
-                <h2>SUB</h2>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta in delectus sed et porro vel
-                architecto
-                qui
-                autem quas consequatur labore eveniet, id nihil tenetur eligendi ratione, molestias cum incidunt!
-
+                <h6>INSTRUCTIONS</h6>
+                <ol>
+                  <li>
+                    <strong>CHILI LIME FISH:</strong> Defrost the fish by soaking it in the packaging in cold water for
+                    about 15
+                    minutes.
+                    Preheat the oven to 400 degrees. Whisk the butter, lime juice, chili powder, garlic powder, and
+                    salt
+                    together. Place the fish in a small oven-safe dish, pour sauce over the top, and bake for 15
+                    minutes.
+                    Remove fish from the oven, flake into small pieces, and toss with any sauce left in the pan. Bake
+                    for
+                    another 5 minutes so the sauce soaks into the fish.
+                  </li>
+                  <li>
+                    <strong>PEACH SALSA:</strong> Toss all ingredients together.
+                  </li>
+                  <li>
+                    <strong>TACOS:</strong> Assemble, layer, load it up, squeeze more lime over the top, and DEVOUR.
+                  </li>
+                </ol>
+                <div class="cell recipe-notes" data-aos="zoom-up-right" data-aos-placement="center center">
+                  <h5>NOTES:</h5>
+                  <div class="note-clip">
+                    <p>
+                      For a nice quick little sauce, reserve 1-2 tablespoons of the chili lime sauce and mix with mayo
+                      or
+                      sour cream. Drizzle this sauce over the top of your tacos.
+                    </p>
+                  </div>
+                </div>
                 <div class="cell share-content">
-                  <h3>SHARE</h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, consequuntur quis. Earum quae itaque
-                  iure
-                  esse
-                  dolorum a nostrum consequuntur minus labore ullam, ad consectetur ipsam laudantium hic ut
-                  necessitatibus.
+                  <span class="input-group share-comment">
+                    <label for="user_pic">
+                      <i class="fa fa-user-circle user-icon"></i>
+                    </label>
 
-                  <div class="cell comment-section">
-                    <h4>COMMENTS</h4>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique facere magni explicabo nulla
-                    rerum
-                    pariatur, quos eaque possimus inventore consectetur magnam eius quae placeat assumenda accusantium
-                    nihil,
-                    enim
-                    quas praesentium.
+                    <textarea type="text" placeholder="Comment here..."></textarea>
+                  </span>
+                  <div class="share-btn text-right">
+                    <a href="#!">
+                      <i class="fa fa-star-o"></i>
+                    </a>
+                    <a href="#!">
+                      <i class="fa fa-thumbs-o-up"></i>
+                    </a>
+                    <a href="#!">
+                      <i class="fa fa-share"></i>
+                    </a>
+                    <a href="#!" class="button success">
+                      <i class="fa fa-comment-o"></i>
+                    </a>
+                  </div>
+
+                  <div class="cell comment-section-container">
+                    <div class="cell comment">
+                      <div class="comment-main">
+                        <label for="user_img">
+                          <h5>
+                            <i class="fa fa-user-circle user-icon"></i>
+                            Kalixto569
+                          </h5>
+                          <span class="post-date">
+                            October 13 @ 10:34
+                          </span>
+                        </label>
+                        <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum dolores quia sapiente, eligendi
+                          quaerat voluptate dolorem nam asperiores amet officiis molestiae fuga optio, quasi omnis!
+                          autem. Eos laudantium distinctio voluptate.
+                        </p>
+                        <div class="share-btn text-right">
+                          <a href="#!">
+                            <i class="fa fa-thumbs-o-up"></i>
+                          </a>
+                          <a href="#!">
+                            <i class="fa fa-reply"></i>
+                          </a>
+                          <a href="#!" hidden></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment-reply">
+                      <label for="user_img">
+                        <h5 align="right">
+                          <i class="fa fa-user-circle user-icon"></i>
+                          Kalixto569
+                        </h5>
+                        <span class="post-date">
+                          <p align="right">
+                            October 14 @ 9:34
+                          </p>
+                        </span>
+                      </label>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. <i class="fa fa-smile-o"></i>
+                      </p>
+                      <div class="share-btn text-right">
+                        <a href="#!">
+                          <i class="fa fa-thumbs-o-up"></i>
+                        </a>
+                        <a href="#!" hidden></a>
+                      </div>
+                    </div>
+                    <div class="cell comment">
+                      <div class="comment-main">
+                        <label for="user_img">
+                          <h5>
+                            <i class="fa fa-user-circle user-icon"></i>
+                            Kalixto569
+                          </h5>
+                          <span class="post-date">
+                            October 13 @ 10:34
+                          </span>
+                        </label>
+                        <p>
+                          <i class="fa fa-one"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
+                          dolores quia sapiente, eligendi
+                          quaerat voluptate dolorem nam asperiores amet officiis molestiae fuga optio, quasi omnis!
+                          autem. Eos laudantium distinctio voluptate.
+                        </p>
+                        <div class="share-btn text-right">
+                          <a href="#!">
+                            <i class="fa fa-thumbs-o-up"></i>
+                          </a>
+                          <a href="#!">
+                            <i class="fa fa-reply"></i>
+                          </a>
+                          <a href="#!" hidden></a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="cell main-content">
-              <h1>MAIN</h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quo temporibus sunt aperiam illo eveniet,
-              repellat
-              distinctio! Aliquam vitae repellendus porro, temporibus quaerat incidunt maiores possimus mollitia nisi,
-              accusantium impedit.
+
+
+            <div class="cell large-13 medium-12 main-content" data-aos="fade-up-left" data-aos-placement="top-center">
+              <h2 align="center">Sweet Treat Buñuelos</h2>
+              <div class="cell content-container-full small-order-1">
+                <div class="cell recipe-img-container-full align-left small-order-1">
+                  <img src="assets/img/fav-img-modal/fav_5-modal.jpg" alt="Recipe_1" class="recipe-img small-order-1"
+                    style="margin-right: 1rem; margin-bottom: 1rem;">
+                </div>
+                <div class="cell content-description-full align-right small-order-2">
+                  <p>
+                    As happens with many different foods brought to the New World from Mother Spain, buñuelos are
+                    enjoyed in countless versions throughout Latin America. Depending on where they are made and what
+                    ingredients they include, buñuelos can be sweet, savory, or somewhere in between.
+                    <br>
+                    <br>
+                    Mexican buñuelos are sweet, and they exist in two main forms: the roundish doughnut-like rendition
+                    explained below, and a larger, relatively flat version that is more similar to an American
+                    “elephant ear.” Both of these types of buñuelos are popular during the December holidays, and both
+                    can be eaten plain or covered in sugar or a light piloncillo syrup.
+                  </p>
+                </div>
+              </div>
+              <div class="cell large-9 medium-9 content-container small-order-2">
+                <div class="content-description float-left small-order-1">
+                  <p>
+                    <h6 align="left"><strong>INGREDIENTS</strong></h6>
+                    <h6>for the topping:</h6>
+                    <ul>
+                      <li>3 tablespoons white sugar</li>
+                      <li>1 teaspoon ground cinnamon</li>
+                    </ul>
+                    <h6>for the dough:</h6>
+                    <ul>
+                      <li>1 and 1/2 cup white wheat flour</li>
+                      <li>1 teaspoon baking powder</li>
+                      <li>3 tablespoons white sugar</li>
+                      <li>1/4 cup vegetable oil or butter</li>
+                      <li>1 large egg</li>
+                      <li>1/4 cup milk</li>
+                      <li>1/2 cup masa harina</li>
+                    </ul>
+                    <h6>for frying:</h6>
+                    <ul>
+                      <li>approximately 1 cup vegetable oil</li>
+                    </ul>
+                  </p>
+                </div>
+                <div class="recipe-img-container float-right small-order-2" style="padding-top: .5rem; margin-bottom: 1rem">
+                  <img src="assets/img/fav-img-modal/fav_5-modal-2.jpg" alt="Recipe_1-2" class="recipe-img">
+                </div>
+              </div>
               <div class="cell sub-content">
-                <h2>SUB</h2>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta in delectus sed et porro vel
-                architecto
-                qui
-                autem quas consequatur labore eveniet, id nihil tenetur eligendi ratione, molestias cum incidunt!
-
+                <h6>INSTRUCTIONS</h6>
+                <ol>
+                  <li>
+                    For the topping, combine sugar and cinnamon in a shallow dish.
+                  </li>
+                  <li>
+                    Sift together the flour and baking powder.
+                  </li>
+                  <li>
+                    In a separate bowl, cream the sugar and the oil or butter until smooth. Add the egg, the milk, and
+                    the
+                    masa harina.
+                  </li>
+                  <li>
+                    Gradually add the flour, mixing well after each addition, until a dough forms.
+                  </li>
+                  <li>
+                    Roll the dough into meatball-sized spheres, about 1 and 1/2 inches in diameter. You can leave them
+                    round, or flatten them into cakes.
+                  </li>
+                  <li>
+                    Heat vegetable oil in a medium-sized saucepan until hot. Fry dough balls or cakes until golden
+                    brown,
+                    about 6 or 7 minutes, turning to brown all over.
+                  </li>
+                  <li>
+                    Remove balls to the paper towel-covered plate to drain.
+                    Using tongs, place each buñuelo onto the plate with the sugar and cinnamon mixture and shake until
+                    well
+                    coated, turning the piece over if necessary.
+                  </li>
+                  <li>
+                    Serve your delicious buñuelos warm, with atole or hot chocolate, if you like.
+                  </li>
+                </ol>
+                <div class="cell recipe-notes" data-aos="zoom-up-right" data-aos-placement="center center">
+                  <h5>NOTES:</h5>
+                  <div class="note-clip">
+                    <h6>Variations on Toppings for Buñuelos:</h6>
+                    <p>
+                      Omit the granulated sugar and cinnamon and try these other topping possibilities:
+                      <ul>
+                        <li>
+                          Roll your buñuelos around in powdered instead of granulated sugar. The powdered sugar will
+                          “melt”
+                          and disappear, but leave a sweet glaze behind. If you like, roll them in the powdered sugar
+                          again
+                          once they have cooled down somewhat, or sprinkle some on them when serving.
+                        </li>
+                        <li>
+                          Make a light syrup by dissolving some piloncillo (or dark brown sugar if you don’t have
+                          piloncillo)
+                          in a water. Add a little ground cinnamon and a healthy pinch of ground anise and/or cloves;
+                          mix
+                          thoroughly. Pour the syrup, warm or room temperature, over the buñuelos, or use it as a
+                          buñuelo
+                          “dip.”
+                        </li>
+                        <li>
+                          Serve Mexican chocolate sauce as a dip for the buñuelos.
+                        </li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
                 <div class="cell share-content">
-                  <h3>SHARE</h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, consequuntur quis. Earum quae itaque
-                  iure
-                  esse
-                  dolorum a nostrum consequuntur minus labore ullam, ad consectetur ipsam laudantium hic ut
-                  necessitatibus.
-
-                  <div class="cell comment-section">
-                    <h4>COMMENTS</h4>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique facere magni explicabo nulla
-                    rerum
-                    pariatur, quos eaque possimus inventore consectetur magnam eius quae placeat assumenda accusantium
-                    nihil,
-                    enim
-                    quas praesentium.
+                  <span class="input-group share-comment">
+                    <label for="user_pic">
+                      <i class="fa fa-user-circle user-icon"></i>
+                    </label>
+                    <textarea type="text" placeholder="Comment here..."></textarea>
+                  </span>
+                  <div class="share-btn text-right">
+                    <a href="#!">
+                      <i class="fa fa-star-o"></i>
+                    </a>
+                    <a href="#!">
+                      <i class="fa fa-thumbs-o-up"></i>
+                    </a>
+                    <a href="#!">
+                      <i class="fa fa-share"></i>
+                    </a>
+                    <a href="#!" class="button success">
+                      <i class="fa fa-comment-o"></i>
+                    </a>
+                  </div>
+                  <div class="cell comment-section-container">
+                    <div class="cell comment">
+                      <div class="comment-main">
+                        <label for="user_img">
+                          <h5>
+                            <i class="fa fa-user-circle user-icon"></i>
+                            Kalixto569
+                          </h5>
+                          <span class="post-date">
+                            October 13 @ 10:34
+                          </span>
+                        </label>
+                        <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum dolores quia sapiente, eligendi
+                          quaerat voluptate dolorem nam asperiores amet officiis molestiae fuga optio, quasi omnis!
+                          autem. Eos laudantium distinctio voluptate.
+                        </p>
+                        <div class="share-btn text-right">
+                          <a href="#!">
+                            <i class="fa fa-thumbs-o-up"></i>
+                          </a>
+                          <a href="#!">
+                            <i class="fa fa-reply"></i>
+                          </a>
+                          <a href="#!" hidden></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment-reply">
+                      <label for="user_img">
+                        <h5 align="right">
+                          <i class="fa fa-user-circle user-icon"></i>
+                          Kalixto569
+                        </h5>
+                        <span class="post-date">
+                          <p align="right">
+                            October 14 @ 9:34
+                          </p>
+                        </span>
+                      </label>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. <i class="fa fa-smile-o"></i>
+                      </p>
+                      <div class="share-btn text-right">
+                        <a href="#!">
+                          <i class="fa fa-thumbs-o-up"></i>
+                        </a>
+                        <a href="#!" hidden></a>
+                      </div>
+                    </div>
+                    <div class="cell comment">
+                      <div class="comment-main">
+                        <label for="user_img">
+                          <h5>
+                            <i class="fa fa-user-circle user-icon"></i>
+                            Kalixto569
+                          </h5>
+                          <span class="post-date">
+                            October 13 @ 10:34
+                          </span>
+                        </label>
+                        <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum dolores quia sapiente, eligendi
+                          quaerat voluptate dolorem nam asperiores amet officiis molestiae fuga optio, quasi omnis!
+                          autem. Eos laudantium distinctio voluptate.
+                        </p>
+                        <div class="share-btn text-right">
+                          <a href="#!">
+                            <i class="fa fa-thumbs-o-up"></i>
+                          </a>
+                          <a href="#!">
+                            <i class="fa fa-reply"></i>
+                          </a>
+                          <a href="#!" hidden></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment-reply">
+                      <label for="user_img">
+                        <h5 align="right">
+                          <i class="fa fa-user-circle user-icon"></i>
+                          Kalixto569
+                        </h5>
+                        <span class="post-date">
+                          <p align="right">
+                            October 14 @ 9:34
+                          </p>
+                        </span>
+                      </label>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. <i class="fa fa-smile-o"></i>
+                      </p>
+                      <div class="share-btn text-right">
+                        <a href="#!">
+                          <i class="fa fa-thumbs-o-up"></i>
+                        </a>
+                        <a href="#!" hidden></a>
+                      </div>
+                    </div>
+                    <div class="comment-reply">
+                      <label for="user_img">
+                        <h5 align="right">
+                          <i class="fa fa-user-circle user-icon"></i>
+                          Kalixto569
+                        </h5>
+                        <span class="post-date">
+                          <p align="right">
+                            October 14 @ 9:34
+                          </p>
+                        </span>
+                      </label>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. <i class="fa fa-smile-o"></i>
+                      </p>
+                      <div class="share-btn text-right">
+                        <a href="#!">
+                          <i class="fa fa-thumbs-o-up"></i>
+                        </a>
+                        <a href="#!" hidden></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="cell main-content">
-              <h1>MAIN</h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quo temporibus sunt aperiam illo eveniet,
-              repellat
-              distinctio! Aliquam vitae repellendus porro, temporibus quaerat incidunt maiores possimus mollitia nisi,
-              accusantium impedit.
-              <div class="cell sub-content">
-                <h2>SUB</h2>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta in delectus sed et porro vel
-                architecto
-                qui
-                autem quas consequatur labore eveniet, id nihil tenetur eligendi ratione, molestias cum incidunt!
-
-                <div class="cell share-content">
-                  <h3>SHARE</h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, consequuntur quis. Earum quae itaque
-                  iure
-                  esse
-                  dolorum a nostrum consequuntur minus labore ullam, ad consectetur ipsam laudantium hic ut
-                  necessitatibus.
-
-                  <div class="cell comment-section">
-                    <h4>COMMENTS</h4>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique facere magni explicabo nulla
-                    rerum
-                    pariatur, quos eaque possimus inventore consectetur magnam eius quae placeat assumenda accusantium
-                    nihil,
-                    enim
-                    quas praesentium.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </main>
         </div>
+        </main>
       </div>
     </div>
   </div>
+
+  <footer class="grid-x footer-container">
+    <div class="cell medium-9 large-9 footer-main">
+      <div class="footer-contact">
+        CONTACT ME!
+        <ul class="no-bullet">
+          <li>
+            <i class="fa fa-envelope-o"></i>
+            <a href="mailto:andre.rlucas@outlook.com">andre.rlucas@outlook.com</a>
+          </li>
+          <li>
+            <i class="fa fa-mobile"></i>
+            (+506) 6216–3355
+          </li>
+          <li>
+            <i class="fa fa-location-arrow"></i>
+            Rohrmoser, Pavas, San José, Costa Rica
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="cell medium-9 large-9 footer-main">
+      <div class="footer-contact" align="right">
+        <h6>Websites:</h6>
+
+        <ul class="no-bullet websites">
+          <li>
+            <a href="#!">
+              <i class="fa fa-linkedin fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/AndlerRL">
+              <i class="fa fa-twitter fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/AndlerRL">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#!">
+              <i class="fa fa-stack-overflow fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="cell footer-main" align="center">
+      <h6>Website develop by <em>AndlerRL</em>. © 2018 Copyright. ® All Rights Reserved.</h6>
+    </div>
+  </footer>
 
 
 
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/aos.js"></script>
   <script src="js/vendor/foundation.min.js"></script>
   <script src="js/app.js"></script>
 </body>
