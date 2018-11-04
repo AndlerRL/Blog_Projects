@@ -5,13 +5,236 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Trip in land</title>
 
+  <link rel="shortcut icon" href="assets/img/logo.jpg" type="image/x-icon">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/vendor/materialize.min.css" media="screen,projection">
   <link rel="stylesheet" href="css/app.css">
 </head>
 
-<body>
+<body class="background-container">
+  <div class="background">
+    <header class="row header-container lime darken-1 text text-lighten-5">
+      <div class="col s6 m1 l1 logo-container responsive-img left">
+        <a href="#!">
+          <img src="assets/img/main-logo.png" alt="Main Logo" class="card-image blue-grey darken-4">
+        </a>
+        <div class="slogan-container hide-on-small-only">
+          <h2>Trippin' through screens</h2>
+        </div>
+      </div>
+      <nav class="col s6 m11 l11 nav-container right">
+        <div class="nav-wrapper nav-main">
+          <ul class="right hide-on-small-only ul-main">
+            <li class="active">
+              <a href="#!">
+                <i class="material-icons right">home</i>
+                <span class="hide-on-med-and-down landscape">
+                  Home
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="material-icons right">collections</i>
+                <span class="hide-on-med-and-down landscape">
+                  Recent Posts
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="material-icons right">star</i>
+                <span class="hide-on-med-and-down landscape">
+                  Popular Posts
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="material-icons right">account_box</i>
+                <span class="hide-on-med-and-down landscape">
+                  Profile
+                </span>
+              </a>
+            </li>
+            <li class="log-in">
+              <a href="#!">
+                <i class="material-icons right">input</i>
+                <span class="hide-on-med-and-down landscape">
+                  Log in
+                </span>
+              </a>
+            </li>
+            <li class="register">
+              <a href="#!">
+                <i class="material-icons left">person_add</i>
+                <span class="hide-on-med-and-down landscape">
+                  Register
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#!"><i class="material-icons">more_vert</i></a>
+            </li>
+          </ul>
 
+          <ul id="navContent" class="dropdown-content lime lighten-3 z-depth-1">
+            <li class="active">
+              <a href="#!">
+                <i class="material-icons right">home</i>
+                <span class="hide-on-med-and-up">
+                  Home
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="material-icons right">collections</i>
+                <span class="hide-on-med-and-up">
+                  Recent Posts
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="material-icons right">star</i>
+                <span class="hide-on-med-and-up">
+                  Popular Posts
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="material-icons right">account_box</i>
+                <span class="hide-on-med-and-up">
+                  Profile
+                </span>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li class="log-in">
+              <a href="#!">
+                <i class="material-icons left">input</i>
+                <span class="hide-on-med-and-up">
+                  Log in
+                </span>
+              </a>
+            </li>
+            <li class="register">
+              <a href="#!">
+                <i class="material-icons left">person_add</i>
+                <span class="hide-on-med-and-up">
+                  Register
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="material-icons left">more_vert</i>
+                More
+              </a>
+            </li>
+          </ul>
+
+          <ul class="right hide-on-med-and-up">
+            <li>
+              <a class="dropdown-trigger waves-effect waves-light" href="#!" data-target="navContent">
+                <i class="material-icons center">menu</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <aside class="row z-depth-3 social-container lime accent-4 center" id="slide_1">
+      <ul class="">
+        <li>
+          <a href="#!" class="waves-effect waves-light btn-floating">
+            <i class="fab fa-facebook-f fa-10x center"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#!" class="waves-effect waves-light btn-floating">
+            <i class="fab fa-twitter fa-10x center"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#!" class="waves-effect waves-light btn-floating">
+            <i class="fab fa-instagram fa-10x center"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#!" class="waves-effect waves-light btn-floating">
+            <i class="fab fa-pinterest fa-10x center"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="slide centered" id="slide_2">
+        <i class="fa fa-chevron-right fa-1x" id="slide"></i>
+      </div>
+    </aside>
+
+
+
+    <main class="row container light-blue lighten-5">
+      <div class="col s12 m6 l6 light-green">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati autem nemo labore, id voluptas neque
+          beatae minus tenetur dolorem, sint, molestias debitis. Architecto aut illum vero ea tempore alias.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ducimus voluptatum enim soluta dolor,
+          reiciendis atque eaque illum placeat assumenda similique facilis quaerat iure incidunt ut eos at, molestias nam.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio voluptatibus consequatur delectus deleniti
+          temporibus veritatis, fuga quo consectetur nemo dolores odit soluta eaque suscipit harum libero officiis autem?
+          Dolor.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint aut nobis rerum doloribus, dicta modi iusto
+          repellat itaque vel eum voluptatum commodi maiores, ut nemo. Repellat vero dolorem est?
+      </div>
+      <div class="col s12 m6 l6 light-blue">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati autem nemo labore, id voluptas neque
+          beatae minus tenetur dolorem, sint, molestias debitis. Architecto aut illum vero ea tempore alias.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ducimus voluptatum enim soluta dolor,
+          reiciendis atque eaque illum placeat assumenda similique facilis quaerat iure incidunt ut eos at, molestias nam.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio voluptatibus consequatur delectus deleniti
+          temporibus veritatis, fuga quo consectetur nemo dolores odit soluta eaque suscipit harum libero officiis autem?
+          Dolor.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint aut nobis rerum doloribus, dicta modi iusto
+          repellat itaque vel eum voluptatum commodi maiores, ut nemo. Repellat vero dolorem est?
+      </div>
+      <div class="col s12 m6 l6 light-blue">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati autem nemo labore, id voluptas neque
+          beatae minus tenetur dolorem, sint, molestias debitis. Architecto aut illum vero ea tempore alias.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ducimus voluptatum enim soluta dolor,
+          reiciendis atque eaque illum placeat assumenda similique facilis quaerat iure incidunt ut eos at, molestias nam.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio voluptatibus consequatur delectus deleniti
+          temporibus veritatis, fuga quo consectetur nemo dolores odit soluta eaque suscipit harum libero officiis autem?
+          Dolor.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint aut nobis rerum doloribus, dicta modi iusto
+          repellat itaque vel eum voluptatum commodi maiores, ut nemo. Repellat vero dolorem est?
+      </div>
+      <div class="col s12 m6 l6 light-green">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati autem nemo labore, id voluptas neque
+          beatae minus tenetur dolorem, sint, molestias debitis. Architecto aut illum vero ea tempore alias.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi ducimus voluptatum enim soluta dolor,
+          reiciendis atque eaque illum placeat assumenda similique facilis quaerat iure incidunt ut eos at, molestias nam.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio voluptatibus consequatur delectus deleniti
+          temporibus veritatis, fuga quo consectetur nemo dolores odit soluta eaque suscipit harum libero officiis autem?
+          Dolor.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sint aut nobis rerum doloribus, dicta modi iusto
+          repellat itaque vel eum voluptatum commodi maiores, ut nemo. Repellat vero dolorem est?
+      </div>
+    </main>
+  </div>
+
+
+  <script src="js/vendor/jquery-3.2.1.js"></script>
+  <script src="js/vendor/materialize.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
