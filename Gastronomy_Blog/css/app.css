@@ -385,6 +385,7 @@ footer.footer-container {
   margin-top: 4rem;
   padding: 1.5rem 1.5rem .5rem;
   background-color: #00e676;
+  box-shadow: 0 -1px 8px 1px rgba(21, 21, 21, 0.4);
 }
 
 footer.footer-container > div.footer-main {
