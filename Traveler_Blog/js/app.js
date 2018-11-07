@@ -11,4 +11,9 @@ $(document).ready(function () {
     slide_2.toggleClass('slide-right');
     slide_1.toggleClass('social-container-right');
   });
+
+  $('.carousel.carousel-slider').carousel({
+    fillWidth: true,
+    indicators: true
+  });
 });
