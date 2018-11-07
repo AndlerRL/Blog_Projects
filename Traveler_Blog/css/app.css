@@ -20,10 +20,10 @@ rgb(0, 176, 255) */
   -moz-transition-delay: 50ms;
   -o-transition-delay: 50ms;
   transition-delay: 50ms;
-  -webkit-transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .25s !important;
-  -moz-transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .25s !important;
-  -o-transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .25s !important;
-  transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .25s !important;
+  -webkit-transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .25s;
+  -moz-transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .25s;
+  -o-transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .25s;
+  transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .25s;
 }
 
 body.background-container {
