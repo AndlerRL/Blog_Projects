@@ -279,32 +279,24 @@
 
       <div class="col m12 l12 s12 main-content-container">
         <div class="col l9 m9 s12 light-blue lighten-5 content-container z-depth-2">
-          <div class="col l6 m6 s12 content-img">
+          <div class="col l12 m12 s12 content-img">
             <div class="carousel carousel-slider center">
               <div class="carousel-item blue-grey darken-4 white-text" href="#one!">
-                <p class="truncate"><i class="material-icons small circle blue-grey lighten-1 right blue-grey-text">add</i> Here is some description of the area on this picture and some details of course
-                  that shall be shown on a modal that i'm thinking to add. </p>
-                <img src="assets/img/post_photo_2.jpg" alt="FILE_PHOTO_1" style="margin: 10% auto 25%;">
+                <img src="assets/img/post_photo_2.jpg" alt="FILE_PHOTO_1">
               </div>
               <div class="carousel-item blue-grey darken-4 white-text" href="#two!">
-                <p class="truncate"><i class="material-icons small circle blue-grey lighten-1 right blue-grey-text">add</i> Here is some description of the area on this picture and some details of course
-                  that shall be shown on a modal that i'm thinking to add.</p>
-                <img src="assets/img/post_photo_3.jpg" alt="FILE_PHOTO_2" style="margin: 10% auto 25%;">
+                <img src="assets/img/post_photo_3.jpg" alt="FILE_PHOTO_2">
               </div>
               <div class="carousel-item blue-grey darken-4 white-text" href="#three!">
-                <p class="truncate"><i class="material-icons small circle blue-grey lighten-1 right blue-grey-text">add</i> Here is some description of the area on this picture and some details of course
-                  that shall be shown on a modal that i'm thinking to add.</p>
-                <img src="assets/img/post_photo_1.jpg" alt="FILE_PHOTO_3" style="margin: 0">
+                <img src="assets/img/post_photo_1.jpg" alt="FILE_PHOTO_3">
               </div>
               <div class="carousel-item blue-grey darken-4 white-text" href="#four!">
-                <p class="truncate"><i class="material-icons small circle blue-grey lighten-1 right blue-grey-text">add</i> Here is some description of the area on this picture and some details of course
-                  that shall be shown on a modal that i'm thinking to add.</p>
-                <img src="assets/img/post_photo_4.jpg" alt="FILE_PHOTO_4" style="margin: 10% auto 25%;">
+                <img src="assets/img/post_photo_4.jpg" alt="FILE_PHOTO_4">
               </div>
             </div>
           </div>
-          <div class="col l6 m6 s12 content-paragraph">
-            <h4>Discovering Roatán</h4>
+          <div class="col l12 m12 s12 content-paragraph-title center">
+            <h3>Discovering Roatán</h3>
             <div class="date-and-loc">
               <div class="chip">
                 <i class="material-icons circle lime lighten-1">date_range</i>
@@ -319,13 +311,14 @@
                 </span>
               </div>
             </div>
-            <p class="card-panel lime darken-2 white-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, inventore voluptatibus. Tempora quo odit
-              cumque sequi optio cum enim consequuntur vero assumenda, ut quod quidem labore iste velit obcaecati
-              libero.
-              <br><br>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
+          </div>
+          <div class="col l8 m8 s12 content-paragraph card-panel lime darken-2 white-text  center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, inventore voluptatibus. Tempora quo odit
+            cumque sequi optio cum enim consequuntur vero assumenda, ut quod quidem labore iste velit obcaecati
+            libero.
+            <br><br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio pariatur, in eos hic consequuntur
+            neque mollitia. Praesentium, fuga nulla?
           </div>
           <div class="col l12 m12 s12 content-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo cumque officiis mollitia rem delectus
@@ -352,7 +345,7 @@
 
           </div>
           <div class="col l6 m6 s12 blue-grey darken-4 content-img">
-            <img src="assets/img/post_photo_5.jpg" alt="POST_PHOTO_FILE" width="100%">
+            <img src="assets/img/post_photo_5.jpg" alt="POST_PHOTO_FILE">
           </div>
 
           <div class="col l12 m12 s12 blue-grey darken-1 white-text comment-container">
@@ -367,21 +360,21 @@
                 </div>
                 <div class="col l12 m12 s12 share-section">
                   <ul class="col l8 m7 s6 share-opt">
-                    <li>
-                      <i class="material-icons">thumb_down</i>
+                    <li class="waves-effect waves-orange">
+                      <i class="material-icons" id="thumb-down">thumb_down</i>
                     </li>
-                    <li>
-                      <i class="material-icons">thumb_up</i>
+                    <li class="waves-effect waves-orange">
+                      <i class="material-icons" id="thumb-up">thumb_up</i>
                     </li>
-                    <li>
-                      <i class="material-icons">favorite_border</i>
+                    <li class="waves-effect waves-orange">
+                      <i class="material-icons" id="fav">favorite_border</i>
                     </li>
-                    <li>
-                      <i class="material-icons">share</i>
+                    <li class="waves-effect waves-orange">
+                      <i class="material-icons" id="share">share</i>
                     </li>
                   </ul>
                   <span class="col l4 m5 s6">
-                    <button type="submit" class="btn btn-large btn-block">Comment</button>
+                    <button type="submit" class="btn btn-large btn-block waves-effect waves-orange">Comment</button>
                   </span>
                 </div>
               </div>
@@ -402,8 +395,8 @@
                     voluptatum ad culpa.
                   </p>
                   <span class="secondary-content">
-                    <i class="material-icons">thumb_up</i>
-                    <i class="material-icons">reply</i>
+                    <i class="material-icons waves-effect waves-orange" id="thumb-up-comment">thumb_up</i>
+                    <i class="material-icons waves-effect waves-orange" id="reply">reply</i>
                   </span>
                 </li>
                 <li class="collection-item avatar z-depth-2 comment-reply">
@@ -420,7 +413,7 @@
                     voluptatum ad culpa.
                   </p>
                   <span class="secondary-content">
-                    <i class="material-icons">thumb_up</i>
+                    <i class="material-icons waves-effect waves-orange" id="thumb-up-reply">thumb_up</i>
                   </span>
                 </li>
                 <li class="collection-item avatar z-depth-2">
@@ -437,8 +430,8 @@
                     voluptatum ad culpa.
                   </p>
                   <span class="secondary-content">
-                    <i class="material-icons">thumb_up</i>
-                    <i class="material-icons">reply</i>
+                    <i class="material-icons waves-effect waves-orange" id="thumb-up-comment">thumb_up</i>
+                    <i class="material-icons waves-effect waves-orange" id="reply">reply</i>
                   </span>
                 </li>
                 <li class="collection-item avatar z-depth-2">
@@ -455,8 +448,8 @@
                     voluptatum ad culpa.
                   </p>
                   <span class="secondary-content">
-                    <i class="material-icons">thumb_up</i>
-                    <i class="material-icons">reply</i>
+                    <i class="material-icons waves-effect waves-orange" id="thumb-up-comment">thumb_up</i>
+                    <i class="material-icons waves-effect waves-orange" id="reply">reply</i>
                   </span>
                 </li>
                 <li class="collection-item avatar z-depth-2">
@@ -473,8 +466,8 @@
                     voluptatum ad culpa.
                   </p>
                   <span class="secondary-content">
-                    <i class="material-icons">thumb_up</i>
-                    <i class="material-icons">reply</i>
+                    <i class="material-icons waves-effect waves-orange" id="thumb-up-comment">thumb_up</i>
+                    <i class="material-icons waves-effect waves-orange" id="reply">reply</i>
                   </span>
                 </li>
               </ul>
@@ -521,6 +514,49 @@
         </aside>
       </div>
     </main>
+
+    <footer class="row footer-container lime lighten-2">
+      <div class="col l6 m6 s12 footer-content">
+        <ul class="footer-contact">
+          <li>CONTACT ME!</li>
+          <li>
+            <i class="material-icons tiny circle lime lighten-4 center">mail</i>
+            <a href="mailto:andre.rlucas@outlook.com">andre.rlucas@outlook.com</a>
+          </li>
+          <li>
+            <i class="material-icons tiny circle lime lighten-4 center">phone_android</i>
+            <a href="tel:+50662163355">+506 6216–3355</a>
+          </li>
+          <li>
+            <i class="material-icons tiny circle lime lighten-4 center">navigation</i>
+            Rorhmoser Pavas, San José, Costa Rica
+          </li>
+        </ul>
+      </div>
+      <div class="col l6 m6 s12 footer-content right-align">
+        <ul class="footer-websites">
+          <li class="header">WEBSITES:</li>
+          <li>
+            <i class="fab fa-facebook-f fa-2x circle lime lighten-4 center"></i>
+          </li>
+          <li>
+            <i class="fab fa-twitter fa-2x circle lime lighten-4 center"></i>
+          </li>
+          <li>
+            <i class="fab fa-stack-overflow fa-2x circle lime lighten-4 center"></i>
+          </li>
+          <li>
+            <i class="fab fa-github-alt fa-2x circle lime lighten-4 center"></i>
+          </li>
+          <li>
+            <i class="fab fa-linkedin-in fa-2x circle lime lighten-4 center"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 m12 s12 footer-copyright center">
+        Website Powered by <strong title="Roberto Romero Lucas">AndlerRL</strong>. 2018 © All Rights Reserved ®.
+      </div>
+    </footer>
   </div>
 
 

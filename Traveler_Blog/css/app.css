@@ -274,46 +274,63 @@ main.main-container>div.main-content-container>div.content-container>div.content
   padding: 1.5rem 0;
 }
 
-main.main-container > div.main-content-container > div.content-container > div.content-img > div > div > p {
-  background: linear-gradient(to bottom, #fafafa4f 20%, #607d8b00 80%);
-  height: 15%;
-  margin: 0;
-  padding: 1rem;
+main.main-container>div.main-content-container>div.content-container>div.content-img>div>div>img {
+  height: 100%;
+  width: auto;
 }
 
-main.main-container > div.main-content-container > div.content-container > div.content-img > div > div > p > i {
-  position: relative;
+main.main-container>div.main-content-container>div.content-container>div.content-img>img {
+  height: auto;
+  width: 100%;
 }
 
-main.main-container > div.main-content-container > div.content-container > div.content-img > div > div > p > i:hover {
-  color: #455a64 !important;
-  cursor: pointer;
+main.main-container>div.main-content-container>div.content-container>div.content-img>div.carousel {
+  min-height: 25rem;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.content-img>div.carousel>div.carousel-item {
+  -webkit-transition-duration: 0.01s;
+  -moz-transition-duration: 0.01s;
+  -o-transition-duration: 0.01s;
+  transition-duration: 0.01s;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.content-paragraph-title {
+  padding: .25rem;
+  margin: 0 auto 2.666rem;
 }
 
 main.main-container>div.main-content-container>div.content-container>div.content-paragraph {
-  min-height: 16.6666rem;
+  min-height: 16.66665rem;
   padding: .25rem;
+  margin: 0 auto;
 }
 
-main.main-container > div.main-content-container > div.content-container > div.content-paragraph > div.date-and-loc {
+main.main-container>div.main-content-container>div.content-container>div.content-paragraph.card-panel {
+  margin: 0 16.6666% 1.5rem;
+  text-align: justify;
+  padding: 1.5rem;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.content-paragraph>div.date-and-loc {
   display: inline-flex;
   flex-direction: row;
 }
 
-main.main-container > div.main-content-container > div.content-container > div.content-paragraph > div.date-and-loc > div,
-main.main-container > div.main-content-container > aside.aside-content-container > div.aside-main-content > h5 > span {
+main.main-container>div.main-content-container>div.content-container>div.content-paragraph>div.date-and-loc>div,
+main.main-container>div.main-content-container>aside.aside-content-container>div.aside-main-content>h5>span {
   padding-left: 0;
   font-size: 10px;
 }
 
-main.main-container > div.main-content-container > div.content-container > div.content-paragraph > div.date-and-loc > div > i,
-main.main-container > div.main-content-container > aside.aside-content-container > div.aside-main-content > h5 > span > i {
+main.main-container>div.main-content-container>div.content-container>div.content-paragraph>div.date-and-loc>div>i,
+main.main-container>div.main-content-container>aside.aside-content-container>div.aside-main-content>h5>span>i {
   padding: 3px;
   font-size: 1.75rem;
 }
 
-main.main-container > div.main-content-container > div.content-container > div.content-paragraph > div.date-and-loc > div > span,
-main.main-container > div.main-content-container > aside.aside-content-container > div.aside-main-content > h5 > span.chip > span {
+main.main-container>div.main-content-container>div.content-container>div.content-paragraph>div.date-and-loc>div>span,
+main.main-container>div.main-content-container>aside.aside-content-container>div.aside-main-content>h5>span.chip>span {
   padding-left: 4px !important;
   top: -8px;
   position: relative;
@@ -375,8 +392,13 @@ main.main-container>div.main-content-container>div.content-container>div.comment
 }
 
 main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-share-section>div.comment-write-section>div.share-section>ul.share-opt>li {
-  margin: 0 .25rem;
+  margin: 0;
+  padding: .25rem .75rem;
   cursor: pointer;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-share-section>div.comment-write-section>div.share-section>ul.share-opt>li>i {
+  opacity: .80;
 }
 
 main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section {
@@ -419,7 +441,7 @@ main.main-container>div.main-content-container>div.content-container>div.comment
   font-size: 12.5px;
 }
 
-main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section>ul>li.comment-reply > span.title {
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section>ul>li.comment-reply>span.title {
   font-size: 1.3333rem;
 }
 
@@ -443,48 +465,95 @@ main.main-container>div.main-content-container>div.content-container>div.comment
   margin-left: .3333rem;
 }
 
-main.main-container > div.main-content-container > aside.aside-content-container {
+main.main-container>div.main-content-container>aside.aside-content-container {
   margin: 1rem auto;
   min-height: 50rem;
   padding: 0;
 }
 
-main.main-container > div.main-content-container > aside.aside-content-container > div.aside-content-img {
+main.main-container>div.main-content-container>aside.aside-content-container>div.aside-content-img {
   margin: 1rem auto;
   min-height: 12.5rem;
 }
 
-main.main-container > div.main-content-container > aside.aside-content-container > div.aside-main-content {
+main.main-container>div.main-content-container>aside.aside-content-container>div.aside-main-content {
   padding: 1rem;
   margin: 0 auto;
   text-align: center;
 }
 
-main.main-container > div.main-content-container > aside.aside-content-container > div.aside-main-content > h5 {
+main.main-container>div.main-content-container>aside.aside-content-container>div.aside-main-content>h5 {
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #607d8b;
 }
 
-main.main-container > div.main-content-container > aside.aside-content-container > div.aside-main-content > h5 > span {
+main.main-container>div.main-content-container>aside.aside-content-container>div.aside-main-content>h5>span {
   margin-bottom: 1rem;
 }
 
 
-main.main-container > div.main-content-container > aside.aside-content-container > div.aside-main-content > p {
+main.main-container>div.main-content-container>aside.aside-content-container>div.aside-main-content>p {
   margin-bottom: 5rem;
 }
 
-main.main-container > div.main-content-container > aside.aside-content-container > div.aside-footer-content {
+main.main-container>div.main-content-container>aside.aside-content-container>div.aside-footer-content {
   padding: 1rem;
   margin: 0;
 }
 
-main.main-container > div.main-content-container > aside.aside-content-container > div.aside-footer-content > a > span {
+main.main-container>div.main-content-container>aside.aside-content-container>div.aside-footer-content>a>span {
   vertical-align: super;
   padding-right: 1rem;
 }
 
+.selected {
+  color: #cddc39bf;
+}
+
+
+footer.footer-container {
+  min-height: 10rem;
+  margin: 10rem auto 0;
+  padding: 1.5rem;
+}
+
+footer.footer-container > div.footer-content {
+  font-size: 12px;
+}
+
+footer.footer-container > div.footer-content > ul > li > i {
+  padding: .3333rem;
+  min-width: 34px;
+  min-height: 34px;
+}
+
+footer.footer-container > div.footer-content > ul > li {
+  margin: .5rem;
+}
+
+footer.footer-container > div.footer-content > ul.footer-contact > li > i {
+  padding-top: 9.5px;
+  margin-right: .25rem;
+}
+
+footer.footer-container > div.footer-content > ul.footer-websites > li:not(.header) {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+footer.footer-container > div.footer-content > ul.footer-websites > li:not(.header):hover {
+  transform: scale(1.15, 1.15);
+}
+
+footer.footer-container > div.footer-content > ul.footer-websites > li:not(.header) > i:hover {
+  transform: rotate(360deg);
+}
+
+footer.footer-container > div.footer-copyright {
+  font-family: monospace;
+  color: #2121218f;
+}
 
 
 
@@ -508,6 +577,12 @@ main.main-container > div.main-content-container > aside.aside-content-container
     display: block;
     top: 13.5rem;
     min-width: 30rem !important;
+  }
+
+  main.main-container>div.main-content-container>div.content-container>div.content-paragraph.card-panel {
+    margin: 0 auto 1.5rem;
+    text-align: justify;
+    padding: 1.25rem;
   }
 
   main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section>ul>li.comment-reply {
@@ -558,7 +633,7 @@ main.main-container > div.main-content-container > aside.aside-content-container
   main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section>ul>li.comment-reply {
     width: 80%;
     right: -10.95%;
-}
+  }
 }
 
 @media (min-width: 602px) and (max-width: 1048px) {
