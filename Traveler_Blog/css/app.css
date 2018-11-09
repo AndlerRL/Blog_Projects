@@ -16,10 +16,10 @@ rgb(0, 176, 255) */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-delay: 50ms;
-  -moz-transition-delay: 50ms;
-  -o-transition-delay: 50ms;
-  transition-delay: 50ms;
+  -webkit-transition-delay: 75ms;
+  -moz-transition-delay: 75ms;
+  -o-transition-delay: 75ms;
+  transition-delay: 75ms;
   -webkit-transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .25s;
   -moz-transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .25s;
   -o-transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .25s;
@@ -79,6 +79,7 @@ header.header-container>div.logo-container>div.slogan-container {
 header.header-container>nav.nav-container {
   background-color: transparent !important;
   box-shadow: none !important;
+  padding: 0;
 }
 
 header.header-container>nav.nav-container div.nav-main ul.dropdown-content {
@@ -98,7 +99,7 @@ header.header-container>nav.nav-container>div.nav-main ul.ul-main li.register {
 }
 
 aside.social-container {
-  display: flex;
+  display: inline-table;
   position: sticky;
   top: 25rem !important;
   margin-left: -67px;
@@ -109,6 +110,7 @@ aside.social-container {
   text-align: center;
   border-radius: 2px 15px 15px 2px;
   order: 1;
+  z-index: 99;
 }
 
 aside.social-container-right {
@@ -139,8 +141,8 @@ aside.social-container>div.slide {
   background-color: #c6ff00;
   border-radius: 0 15px 15px 0;
   width: 1rem;
-  height: 20.45rem;
-  left: 68px;
+  height: 20.23rem;
+  left: 70px;
   top: 0;
   cursor: pointer;
 }
@@ -172,7 +174,7 @@ aside.social-container>div.slide>i:hover {
 main.main-container {
   min-height: 50rem;
   border: 1px solid transparent;
-  opacity: .85;
+  background-color: rgba(179, 229, 252, .80);
   order: 3;
 }
 
@@ -186,15 +188,17 @@ main.main-container>div.main-header-container>div[class*="row-"] {
   margin: 0 auto;
   padding: .5rem;
   min-height: 50rem !important;
+  transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .5s;
 }
 
-main.main-container>div.main-header-container>div[class*="row-"] > :hover{
+main.main-container>div.main-header-container>div[class*="row-"]> :hover {
   transform: scale(1.015, 1.015);
   cursor: pointer;
+  transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) .5s;
 }
 
-main.main-container > div.main-header-container>div.row-1-container > div,
-main.main-container > div.main-header-container>div.row-1-container > div > div {
+main.main-container>div.main-header-container>div.row-1-container>div,
+main.main-container>div.main-header-container>div.row-1-container>div>div {
   height: 25rem;
 }
 
@@ -204,23 +208,23 @@ main.main-container>div.main-header-container>div.row-1-container>div>div>img.ro
   padding: 0 !important;
 }
 
-main.main-container > div.main-header-container > div.row-1-container > div > div > div.header-img-content > span,
-main.main-container > div.main-header-container > div.row-2-container > div > div > div.header-img-content > span,
-main.main-container > div.main-header-container > div.row-3-container > div > div > div.header-img-content > span {
+main.main-container>div.main-header-container>div.row-1-container>div>div>div.header-img-content>span,
+main.main-container>div.main-header-container>div.row-2-container>div>div>div.header-img-content>span,
+main.main-container>div.main-header-container>div.row-3-container>div>div>div.header-img-content>span {
   position: absolute;
-  background: linear-gradient(to top, #fafafaaf 10%, #4242425f 90%);
+  background: linear-gradient(to top, #fafafaaf 10%, #4242420f 90%);
   color: #fafafa !important;
   font-weight: 400;
   width: 100%;
   margin: 0 auto;
 }
 
-main.main-container > div.main-header-container > div.row-2-container {
+main.main-container>div.main-header-container>div.row-2-container {
   margin-top: .5rem;
 }
 
-main.main-container > div.main-header-container > div.row-2-container > div,
-main.main-container > div.main-header-container > div.row-2-container > div > div {
+main.main-container>div.main-header-container>div.row-2-container>div,
+main.main-container>div.main-header-container>div.row-2-container>div>div {
   width: 100%;
   height: 50rem;
 }
@@ -236,7 +240,7 @@ main.main-container>div.main-header-container>div.row-2-container>div>div>img.ro
   background-position-x: -27rem !important;
 }
 
-main.main-container > div.main-header-container > div.row-2-container > div > div > div.header-img-content {
+main.main-container>div.main-header-container>div.row-2-container>div>div>div.header-img-content {
   width: 100%;
 }
 
@@ -246,33 +250,239 @@ main.main-container>div.main-header-container>div.row-3-container>div>div>img.ro
   padding: 0;
 }
 
-main.main-container>div.main-header-container > div.row-3-container > div > div > img.row-3-img-2 {
+main.main-container>div.main-header-container>div.row-3-container>div>div>img.row-3-img-2 {
   padding: 0;
   min-height: 20rem !important;
   margin: 0 auto !important;
 }
 
-main.main-container > div.main-content-container,
-main.main-container > div.main-content-container > div.content-container {
+main.main-container>div.main-content-container,
+main.main-container>div.main-content-container>div.content-container {
   min-height: 50rem;
   margin: 1rem auto;
 }
 
-main.main-container > div.main-content-container > div.content-container {
+main.main-container>div.main-content-container>div.content-container {
   padding: 0;
-  border: 1px solid;
+  border: 1px solid transparent;
+  opacity: 1 !important;
 }
 
-main.main-container > div.main-content-container > div.content-container > div.content-img {
+main.main-container>div.main-content-container>div.content-container>div.content-img {
   min-height: 16.6666rem;
-  border: 1px solid;
+  border: 1px solid transparent;
+  padding: 1.5rem 0;
+}
+
+main.main-container > div.main-content-container > div.content-container > div.content-img > div > div > p {
+  background: linear-gradient(to bottom, #fafafa4f 20%, #607d8b00 80%);
+  height: 15%;
+  margin: 0;
+  padding: 1rem;
+}
+
+main.main-container > div.main-content-container > div.content-container > div.content-img > div > div > p > i {
+  position: relative;
+}
+
+main.main-container > div.main-content-container > div.content-container > div.content-img > div > div > p > i:hover {
+  color: #455a64 !important;
+  cursor: pointer;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.content-paragraph {
+  min-height: 16.6666rem;
   padding: .25rem;
 }
 
-main.main-container > div.main-content-container > div.content-container > div.content-paragraph {
-  min-height: 16.6666rem;
-  border: 1px solid;
+main.main-container > div.main-content-container > div.content-container > div.content-paragraph > div.date-and-loc {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+main.main-container > div.main-content-container > div.content-container > div.content-paragraph > div.date-and-loc > div,
+main.main-container > div.main-content-container > aside.aside-content-container > div.aside-main-content > h5 > span {
+  padding-left: 0;
+  font-size: 10px;
+}
+
+main.main-container > div.main-content-container > div.content-container > div.content-paragraph > div.date-and-loc > div > i,
+main.main-container > div.main-content-container > aside.aside-content-container > div.aside-main-content > h5 > span > i {
+  padding: 3px;
+  font-size: 1.75rem;
+}
+
+main.main-container > div.main-content-container > div.content-container > div.content-paragraph > div.date-and-loc > div > span,
+main.main-container > div.main-content-container > aside.aside-content-container > div.aside-main-content > h5 > span.chip > span {
+  padding-left: 4px !important;
+  top: -8px;
+  position: relative;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container {
+  height: 33.75rem;
+  padding: 0;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-share-section {
+  height: 8.75rem;
+  margin: 0;
   padding: .25rem;
+  border-bottom: 1px solid #fafafa;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(#fafafa));
+  background-image: -webkit-linear-gradient(transparent, #fafafa);
+  background-image:
+    -moz-linear-gradient(transparent, #fafafa),
+    -moz-linear-gradient(transparent, #fafafa);
+  background-image:
+    -o-linear-gradient(transparent, #fafafa),
+    -o-linear-gradient(transparent, #fafafa);
+  background-image:
+    linear-gradient(transparent, #fafafa),
+    linear-gradient(transparent, #fafafa);
+  -moz-background-size: 2px 100%;
+  background-size: 2px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-share-section>div.comment-user-img {
+  height: 8.75rem;
+  left: 0;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-share-section>div.comment-user-img>i {
+  font-size: 8.25rem;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-share-section>div.comment-write-section {
+  margin: 0 auto;
+  padding: 0;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-share-section>div.comment-write-section>div.input-field {
+  margin: .75rem 0 0;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-share-section>div.comment-write-section>div.share-section {
+  padding: 0;
+  display: flex;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-share-section>div.comment-write-section>div.share-section>ul.share-opt {
+  display: inherit;
+  flex-flow: row-reverse;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-share-section>div.comment-write-section>div.share-section>ul.share-opt>li {
+  margin: 0 .25rem;
+  cursor: pointer;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section {
+  height: 25rem;
+  overflow: auto;
+  border-top: 1px solid #fafafa;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(transparent));
+  background-image: -webkit-linear-gradient(#fafafa, transparent);
+  background-image:
+    -moz-linear-gradient(#fafafa, transparent),
+    -moz-linear-gradient(#fafafa, transparent);
+  background-image:
+    -o-linear-gradient(#fafafa, transparent),
+    -o-linear-gradient(#fafafa, transparent);
+  background-image:
+    linear-gradient(#fafafa, transparent),
+    linear-gradient(#fafafa, transparent);
+  -moz-background-size: 2px 100%;
+  background-size: 2px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section>ul {
+  border: transparent;
+  padding: 0;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section>ul>li {
+  background-color: #607d8b;
+  margin: 1rem 1rem 0;
+  border: transparent;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section>ul>li.comment-reply {
+  width: 66.66%;
+  display: flex;
+  flex-direction: column;
+  margin-top: .25rem;
+  font-size: 12.5px;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section>ul>li.comment-reply > span.title {
+  font-size: 1.3333rem;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section>ul>li>i {
+  padding: 0;
+  margin: 0;
+  font-size: 2.6666rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  padding-top: .25rem;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section>ul>li>span.title {
+  font-size: 1.6666rem;
+  margin-left: .25rem;
+}
+
+main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section>ul>li>span.title>span.comment-date {
+  font-size: .75rem;
+  opacity: .5;
+  margin-left: .3333rem;
+}
+
+main.main-container > div.main-content-container > aside.aside-content-container {
+  margin: 1rem auto;
+  min-height: 50rem;
+  padding: 0;
+}
+
+main.main-container > div.main-content-container > aside.aside-content-container > div.aside-content-img {
+  margin: 1rem auto;
+  min-height: 12.5rem;
+}
+
+main.main-container > div.main-content-container > aside.aside-content-container > div.aside-main-content {
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main.main-container > div.main-content-container > aside.aside-content-container > div.aside-main-content > h5 {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #607d8b;
+}
+
+main.main-container > div.main-content-container > aside.aside-content-container > div.aside-main-content > h5 > span {
+  margin-bottom: 1rem;
+}
+
+
+main.main-container > div.main-content-container > aside.aside-content-container > div.aside-main-content > p {
+  margin-bottom: 5rem;
+}
+
+main.main-container > div.main-content-container > aside.aside-content-container > div.aside-footer-content {
+  padding: 1rem;
+  margin: 0;
+}
+
+main.main-container > div.main-content-container > aside.aside-content-container > div.aside-footer-content > a > span {
+  vertical-align: super;
+  padding-right: 1rem;
 }
 
 
@@ -282,7 +492,7 @@ main.main-container > div.main-content-container > div.content-container > div.c
 @media (max-width: 770px) {
   header.header-container>nav.nav-container div.nav-main ul.dropdown-content {
     width: 12rem !important;
-    left: 2rem !important;
+    left: .4rem !important;
     top: 5rem !important;
   }
 
@@ -298,6 +508,17 @@ main.main-container > div.main-content-container > div.content-container > div.c
     display: block;
     top: 13.5rem;
     min-width: 30rem !important;
+  }
+
+  main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section>ul>li.comment-reply {
+    width: 80%;
+    right: -2.5rem;
+  }
+
+  main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section>ul>li>span.title,
+  main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section>ul>li.comment-reply>span.title {
+    font-size: 1.3rem;
+    margin-left: .25rem;
   }
 }
 
@@ -333,9 +554,14 @@ main.main-container > div.main-content-container > div.content-container > div.c
     top: 13.5rem;
     min-width: 23rem !important;
   }
+
+  main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section>ul>li.comment-reply {
+    width: 80%;
+    right: -10.95%;
+}
 }
 
-@media (min-width: 771px) and (max-width: 1048px) {
+@media (min-width: 602px) and (max-width: 1048px) {
   header.header-container>div.logo-container>div.slogan-container {
     left: 17rem;
     top: 3.5rem;
@@ -347,15 +573,31 @@ main.main-container > div.main-content-container > div.content-container > div.c
   }
 
   aside.social-container>div.slide {
-    height: 21.8rem;
+    height: 21.18rem;
     margin-left: 0;
     top: 0;
   }
 
-  main.main-container > div.main-header-container > div.row-1-container,
-  main.main-container > div.main-header-container > div.row-3-container {
+  main.main-container>div.main-header-container>div.row-1-container,
+  main.main-container>div.main-header-container>div.row-3-container {
     height: 12.5rem !important;
     padding: 0;
+  }
+
+  main.main-container>div.main-header-container>div.row-3-container {
+    margin-top: -26rem;
+    margin-bottom: -26rem;
+  }
+
+  main.main-container>div.main-content-container>div.content-container>div.comment-container>div.comment-section>ul>li.comment-reply {
+    right: -12.5%;
+  }
+
+  main.main-container>div.main-header-container>div.row-1-container>div,
+  main.main-container>div.main-header-container>div.row-1-container>div>div,
+  main.main-container>div.main-header-container>div.row-3-container>div,
+  main.main-container>div.main-header-container>div.row-3-container>div>div {
+    height: 12.5rem;
   }
 }
 
